@@ -1,79 +1,371 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<title>Ford Mobile Style Guide</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Ford styleguide : Old Ford Styleguide I knocked out in an afternoon, sadly never used =(" />
+	<!-- Meta -->
+	<meta charset="utf-8" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
 
-    <title>Ford styleguide</title>
-  </head>
+</head>
+<body id="fm-style-guide">
+	<div id="fm-wrapper">
+		<div class="fm-grid">
 
-  <body>
+			<ol class="navigation">
+				<li><a href="#buttons">Buttons</a></li>
+				<li><a href="#headlines">Headlines</a></li>
+				<li><a href="#tabs">Tabs</a></li>
+				<li><a href="#navigation">Navigation</a></li>
+				<li><a href="#forms">Forms</a></li>
+				<li><a href="#typograhy">Typography</a></li>
+				<li><a href="#overlays">Overlays</a></li>
+				<li><a href="#pagination">Pagination</a></li>
+				<li><a href="#media">Media</a></li>
+				<li><a href="#lists">Lists</a></li>
+			</ol>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ipaintcode/ford_styleguide">View on GitHub</a>
+			<h1 class="h1" id="buttons">Buttons</h1>
 
-          <h1 id="project_title">Ford styleguide</h1>
-          <h2 id="project_tagline">Old Ford Styleguide I knocked out in an afternoon, sadly never used =(</h2>
+			<div class="e">
+				<h1 class="h">a.fm-button, input.fm-button</h1>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ipaintcode/ford_styleguide/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ipaintcode/ford_styleguide/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+				<a class="fm-button-menu" href="#buttons">Menu</a>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+				<input class="fm-button search fat-arrow" type="submit" value="Search">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+				<input class="fm-button dropdown fat-arrow-alt" type="submit" value="Select a Year">
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+				<a class="fm-button fat-arrow" href="#buttons"><i class="icon-crosshair"></i>Us My Location</a>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+				<a class="fm-button fm-button-dark fat-arrow" href="#buttons"><i class="icon-money"></i>Get a Quote</a>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+				<a class="fm-button fm-button-dark fat-arrow" href="#buttons"><i class="icon-map"></i>Locate a Dealer</a>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+				<a class="fm-button fm-button-dark fat-arrow" href="#buttons"><i class="icon-cog"></i>Build &amp; Price</a>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+				<a class="fm-button fm-button-dark fat-arrow" href="#buttons"><i class="icon-clipboard"></i>Seach Dealer Inventory</a>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+				<a class="fm-button fm-button-dark fat-arrow" href="#buttons"><i class="icon-present"></i>Incentives</a>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+				<a class="fm-accordian-button arrow-alt" href="">Packages</a>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+				<a class="fm-load-more-button" href="#">Load More Highlights<span class="arrow-entitiy">&#9654;</span></a>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+			</div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+			<h1 class="h1" id="headlines">Headlines</h1>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Ford styleguide maintained by <a href="https://github.com/ipaintcode">ipaintcode</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+			<div class="e">
 
-    
+				<h1 class="h">.fm-h1, .fm-h2 li, .fm-h3, .fm-h4, .fm-h5, .fm-h6</h1>
 
-  </body>
+				<h1 class="fm-h1">2012 <span>Focus</span></h1>
+				<h1 class="fm-h1">2012 <span>Focus</span><em>Highlights</em></h1>
+				<h2 class="fm-h2">Highlights</h2>
+				<h3 class="fm-h3">Maximize Your Lifestyle</h3>
+				<h4 class="fm-h4">Headline 4</h4>
+				<h5 class="fm-h5">Headline 5</h5>
+				<h6 class="fm-h6">Headline 6</h6>
+
+			</div>
+
+			<h1 class="h1" id="navigation">Navigation</h1>
+
+			<div class="e">
+				<h1 class="h">.fm-navigation, .fm-navigation li, .fm-navigation a</h1>
+				<ul class="fm-navigation">
+					<li><strong><a class="fm-button fm-nav-header arrow" href="">Vehicle Showroom</a></strong></li>
+					<li><a class="fm-button arrow med" href=""><i class="icon-map"></i>Locate a Dealer</a></li>
+					<li><a class="fm-button arrow med" href=""><i class="icon-clipboard"></i>Search Dealer Inventory</a></li>
+					<li><a class="fm-button arrow med" href=""><i class="icon-money"></i>Request a Local Quote</a></li>
+					<li><a class="fm-button arrow med" href=""><i class="icon-cog"></i>Build &amp; Price</a></li>
+				</ul>
+
+				<div class="spacer"></div>
+
+				<ul class="fm-navigation-dark">
+					<li><strong><a class="fm-button arrow" href="">Support</a></strong></li>
+					<li><a class="fm-button arrow" href="">Owners</a></li>
+					<li><a class="fm-button arrow" href="">Certified Pre-Owned</a></li>
+					<li><a class="fm-button arrow" href="">Share</a></li>
+					<li><a class="fm-button arrow" href="">Roadside Assistance</a></li>
+				</ul>
+
+				<div class="spacer"></div>
+
+				<ul class="fm-navigation-vehicles">
+					<li><strong><a class="fm-button blue-arrow" href="">Cars</a></strong></li>
+					<li><a class="fm-button blue-arrow" href="">Crossovers &amp; Suv's</a></li>
+					<li><a class="fm-button blue-arrow" href="">Trucks</a></li>
+					<li><a class="fm-button blue-arrow" href="">Hybrids &amp; EV's</a></li>
+					<li><a class="fm-button blue-arrow" href="">Commercial Truck</a></li>
+					<li><a class="fm-button blue-arrow" href="">Future Vehicles</a></li>
+				</ul>
+
+				<div class="spacer"></div>
+
+				<ul class="fm-navigation-media">
+					<li><strong><a class="fm-button arrow" href="">Videos</a></strong></li>
+					<li><a class="fm-button arrow" href="">Colors &amp; 360&deg;</a></li>
+				</ul>
+
+			</div>
+
+			<a class="top" href="#wrapper">Top</a>
+
+			<h1 class="h1" id="forms">Forms</h1>
+
+			<div class="e">
+				<h1 class="h">.fm-required-text, .fm-required-mark</h1>
+				<p class="fm-required-text">Fields marked in <span class="fm-required-mark">*</span> are required.</p>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-required-mark, .fm-form-label, .fm-form-text</h1>
+
+				<dl>
+					<dt><span class="fm-required-mark">*</span> <label class="fm-form-label">Dealer Name</label></dt>
+					<dd><input class="fm-form-text" type="text"></dd>
+				</dl>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-form-label, .fm-form-select</h1>
+				<input class="fm-button search fat-arrow" type="submit" value="State">
+				<select class="fm-form-select">
+					<option>- Select One -</option>
+					<option>Michigan</option>
+				</select>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-form-error</h1>
+				<dl>
+					<dt><label class="fm-form-error">Please complete missing fields!</label></dt>
+					<dd><label class="fm-form-label">ZIP code:</label></dd>
+					<dd><input class="fm-form-text-error" type="text"></dd>
+				</dl>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-form-label, .fm-form-textarea</h1>
+				<dl>
+					<dt><label class="fm-form-label">Comment</label></dt>
+					<dd><textarea class="fm-form-textarea" cols="40" rows="5"></textarea></dd>
+				</dl>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-form-label, .fm-form-money</h1>
+				<dl>
+					<dt><label class="fm-form-label">Price Range</label></dt>
+					<dd>
+						<div class="fm-form-money">$ <input class="fm-form-text" size="20" type="text"></div>
+					</dd>
+				</dl>
+			</div>
+
+		<!-- 	<h1 class="h1" id="headings">Headings</h1>
+
+			<div class="e">
+				<h1 class="h">.fm-h1</h1>
+				<div class="fm-h1"><strong>Ford</strong> Focus</div>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-h2</h1>
+				<div class="fm-h2">Best Selling Class</div>
+			</div>
+
+			<div class="e v">
+				<h1 class="h">.fm-h2-v1</h1>
+				<div class="fm-h2-v1">Choose your vehicle</div>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-h3</h1>
+				<div class="fm-h3">Find a dealer</div>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-h4</h1>
+				<div class="fm-h4">Find a dealer</div>
+			</div>
+
+			<div class="e v">
+				<h1 class="h">.fm-h4-v1</h1>
+				<div class="fm-h4-v1">Find a dealer</div>
+			</div>
+
+			<div class="e v">
+				<h1 class="h">.fm-h4-v2</h1>
+				<div class="fm-h4-v2">$320.00 package "A"</div>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-h5</h1>
+				<div class="fm-h5">Find a dealer</div>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-h6</h1>
+				<div class="fm-h6">Find a dealer</div>
+			</div>
+
+			<div class="e v">
+				<h1 class="h">.fm-h6-v1</h1>
+				<div class="fm-h6-v1">Find a dealer</div>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-h7</h1>
+				<div class="fm-h7">Find a dealer</div>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-h8</h1>
+				<div class="fm-h8">Find a dealer</div>
+			</div>
+
+			<div class="e d">
+				<h1 class="h">.fm-h9</h1>
+				<div class="fm-h9">Find a dealer</div>
+			</div>
+
+			<a class="top" href="#wrapper">Top</a>
+
+			<h1 class="h1" id="links">Links</h1>
+
+			<div class="e">
+				<h1 class="h">a, .fm-link-1</h1>
+				<a href="">Find a dealer</a>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-link-2</h1>
+				<a class="fm-link-2" href="">Find a dealer</a>
+			</div>
+
+			<a class="top" href="#wrapper">Top</a>
+
+			<div class="e">
+				<h1 class="h">.fm-total-field</h1>
+
+				<span class="fm-total-field">Total: $30,000</span>
+			</div> -->
+
+
+			<a class="top" href="#wrapper">Top</a>
+
+			<h1 class="h1" id="media">Media</h1>
+
+			<div class="e">
+				<h1 class="h">.fm-vehicle-list, .fm-vehicle-list-item</h1>
+
+				<ul class="fm-vehicle-list">
+					<li class="fm-vehicle-list-item clearfix">
+						<img src="img/cmax.png" width="130" height="83">
+						<h2 class="fm-h2-vehicle-title">2013 <em>C-Max</em></h2>
+						<ol>
+							<li class="fm-vehicle-msrp"><sup>$</sup>25,200</li>
+							<li class="fm-vehicle-info">Starting MSRP<sup>1</sup></li>
+							<li class="fm-vehicle-info">Seats 5</li>
+							<li class="fm-vehicle-info">MPG<sup>2</sup>47 city 47 hwy</li>
+						</ol>
+						<span class="list-blue-arrow"></span>
+					</li>
+					<li class="fm-vehicle-list-item clearfix">
+						<img src="img/mustang.png" width="130" height="83">
+						<h2 class="fm-h2-vehicle-title">2012 <em>Mustang</em></h2>
+						<ol>
+							<li class="fm-vehicle-msrp"><sup>$</sup>25,200</li>
+							<li class="fm-vehicle-info">Starting MSRP<sup>1</sup></li>
+							<li class="fm-vehicle-info">Seats 4</li>
+							<li class="fm-vehicle-info">MPG<sup>2</sup>19 city 31 hwy</li>
+						</ol>
+						<span class="list-blue-arrow"></span>
+					</li>
+					<li class="fm-vehicle-list-item clearfix">
+						<img src="img/taurus.png" width="130" height="83">
+						<h2 class="fm-h2-vehicle-title">2013 <em>Taurus</em></h2>
+						<ol>
+							<li class="fm-vehicle-msrp"><sup>$</sup>26,600</li>
+							<li class="fm-vehicle-info">Starting MSRP<sup>1</sup></li>
+							<li class="fm-vehicle-info">Seats 5</li>
+							<li class="fm-vehicle-info">MPG<sup>2</sup>19 city 29 hwy</li>
+						</ol>
+						<span class="list-blue-arrow"></span>
+					</li>
+				</ul>
+
+
+
+			</div>
+
+			<a class="top" href="#wrapper">Top</a>
+
+			<h1 class="h1" id="pagination">Pagination</h1>
+
+			<div class="e d">
+				<h1 class="h">.fm-pagination-1</h1>
+				<span class="fm-pagination-1"><span class="fm-pagination-total">15 Interior Images</span> <span class="fm-pagination-links"><a class="fm-pagination-first" href="">&lt; First</a> <a class="fm-pagination-previous" href="">« Previous</a> <strong class="fm-pagination-active">1</strong> <a href="">2</a><a href="">3</a><a class="fm-pagination-next" href="">Next »</a> <a class="fm-pagination-last" href="">Last &gt;</a></span></span>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-pagination-2</h1>
+				<div class="rel">
+					<span class="fm-pagination-2"><a class="fm-pagination-previous" href="">&lt;</a> <span class="fm-pagination-total">1 of 12 photos</span> <a class="fm-pagination-next" href="">&gt;</a></span>
+				</div>
+			</div>
+
+			<div class="e">
+				<h1 class="h">.fm-pagination-3</h1>
+				<nav class="fm-pagination-3">
+					<ul>
+						<li><a class="prev inactive" href=""><span class="arrow-entitiy">&#9664;</span>Previous</a></li><li><a class="next" href="">Next<span class="arrow-entitiy">&#9654;</span></a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<a class="top" href="#wrapper">Top</a>
+
+			<h1 class="h1" id="paragraphs">Paragraphs</h1>
+
+			<div class="e">
+				<h1 class="h">.fm-p1</h1>
+				<p class="fm-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<p class="fm-p1">Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="e">
+				<h1 class="h">p, .fm-p2</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<a class="top" href="#wrapper">Top</a>
+
+		</div>
+	</div>
+
+
+	<!-- Scripts -->
+</body>
 </html>
